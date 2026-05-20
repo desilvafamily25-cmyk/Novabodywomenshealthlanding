@@ -96,13 +96,6 @@
     display: flex; align-items: center; justify-content: center;
   }
   .logo-mark svg { width: 22px; height: 22px; fill: #fff; }
-  .logo-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
-  }
   .logo-text { font-size: 17px; font-weight: 700; color: var(--teal); }
   .logo-text span { display: block; font-size: 11px; font-weight: 400; color: var(--muted); letter-spacing: .04em; }
   .header-cta .btn { padding: 10px 20px; font-size: 14px; }
@@ -610,7 +603,7 @@
   <div class="container">
     <div class="logo-wrap">
       <div class="logo-mark">
-        <img src="novabody_menopause_logo.png" alt="NovaBody Medical Logo" class="logo-image">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
       </div>
       <div class="logo-text">
         NovaBody Medical
@@ -1038,7 +1031,7 @@
 <section class="cta-section">
   <div class="container">
     <h2>Ready to Feel Like Yourself Again?</h2>
-    <p>Most patients book within 48 hours. Telehealth appointments available weekdays,Weekends and Afterhours across Australia. In-person at Balwyn, Melbourne.</p>
+    <p>Most patients book within 48 hours. Telehealth appointments available weekdays across Australia. In-person at Balwyn, Melbourne.</p>
     <div class="cta-btns">
       <a href="https://www.halaxy.com/book/appointment/dr-premila-mudugamuwa-hewage/gp-general-practitioner/1731269/1326611" class="btn btn-white btn-lg" target="_blank" rel="noopener">
         📅 Book Your Consultation
@@ -1047,18 +1040,135 @@
         ✉️ Email a Question First
       </button>
     </div>
+
+    <!-- Netlify enquiry form (hidden by default) -->
+    <div id="enquiry-panel" style="display:none; margin-top:28px; max-width:520px; margin-left:auto; margin-right:auto;">
+      <form
+        name="menopause-enquiry"
+        method="POST"
+        data-netlify="true"
+        id="enquiry-form"
+        style="background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.3); border-radius:14px; padding:28px 24px;"
+      >
+        <input type="hidden" name="form-name" value="menopause-enquiry" />
+        <p style="margin:0 0 18px; font-size:15px; opacity:.9;">No commitment — just ask your question and Dr Hewage's team will reply within one business day.</p>
+
+        <div style="margin-bottom:14px;">
+          <label for="enq-name" style="display:block; font-size:13px; font-weight:600; margin-bottom:5px; opacity:.85;">Your Name</label>
+          <input type="text" id="enq-name" name="name" required placeholder="e.g. Sarah"
+            style="width:100%; padding:10px 14px; border-radius:8px; border:1px solid rgba(255,255,255,0.4); background:rgba(255,255,255,0.15); color:#fff; font-size:15px; box-sizing:border-box; outline:none;">
+        </div>
+
+        <div style="margin-bottom:14px;">
+          <label for="enq-email" style="display:block; font-size:13px; font-weight:600; margin-bottom:5px; opacity:.85;">Your Email</label>
+          <input type="email" id="enq-email" name="email" required placeholder="you@example.com"
+            style="width:100%; padding:10px 14px; border-radius:8px; border:1px solid rgba(255,255,255,0.4); background:rgba(255,255,255,0.15); color:#fff; font-size:15px; box-sizing:border-box; outline:none;">
+        </div>
+
+        <div style="margin-bottom:20px;">
+          <label for="enq-question" style="display:block; font-size:13px; font-weight:600; margin-bottom:5px; opacity:.85;">Your Question</label>
+          <textarea id="enq-question" name="question" required rows="4" placeholder="What would you like to ask Dr Hewage?"
+            style="width:100%; padding:10px 14px; border-radius:8px; border:1px solid rgba(255,255,255,0.4); background:rgba(255,255,255,0.15); color:#fff; font-size:15px; box-sizing:border-box; outline:none; resize:vertical;"></textarea>
+        </div>
+
+        <button type="submit" id="enq-submit"
+          style="width:100%; padding:13px; border-radius:8px; border:none; background:#fff; color:#1A6B72; font-size:16px; font-weight:700; cursor:pointer; transition:opacity .2s;">
+          Send My Question →
+        </button>
+      </form>
+
+      <!-- Success message (hidden until form submits) -->
+      <div id="enquiry-success" style="display:none; background:rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.4); border-radius:14px; padding:28px 24px; text-align:center;">
+        <div style="font-size:36px; margin-bottom:10px;">✅</div>
+        <h3 style="margin:0 0 8px; font-size:20px;">Question received!</h3>
+        <p style="margin:0; opacity:.9;">Dr Hewage's team will reply to your email within one business day. In the meantime, you're also welcome to book directly.</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<!-- ── Footer ──────────────────────────────────────────────── -->
+<!-- ── Footer ───────────────────────────────────────────────── -->
 <footer class="site-footer">
-  <div class="container">
-    <p>© 2025 NovaBody Medical. All rights reserved.</p>
-    <p>Dr Premila Hewage · AHPRA Reg: MED0001619639 · FRACGP</p>
-    <p><strong>Disclaimer:</strong> This website is for informational purposes only and does not constitute medical advice. Please consult with Dr Hewage for personalised medical guidance.</p>
-    <p><a href="#privacy">Privacy Policy</a> · <a href="#terms">Terms of Service</a></p>
-  </div>
+  <p><strong>NovaBody Medical</strong> · Dr Premila Hewage MBBS FRACGP · AHPRA Registered General Practitioner</p>
+  <p>Telehealth Australia-Wide · In-Person at Modern Medical Balwyn, Melbourne</p>
+  <p style="margin-top:8px;">
+    <a href="https://novabodymedical.com.au">novabodymedical.com.au</a> &nbsp;·&nbsp;
+    <a href="mailto:info@novabodymedical.com.au">info@novabodymedical.com.au</a> &nbsp;·&nbsp;
+    <a href="https://novabodymedical.com.au/privacy">Privacy Policy</a>
+  </p>
+  <p style="margin-top:6px; font-size:11px; opacity:.55;">
+    The information on this page is for general guidance only and does not constitute medical advice. All treatment decisions are made in individual consultation with Dr Hewage based on your personal health history. © 2026 NovaBody Medical.
+  </p>
 </footer>
 
+<!-- ── Mobile Sticky CTA ─────────────────────────────────────── -->
+<div class="sticky-cta">
+  <a href="https://www.halaxy.com/book/appointment/dr-premila-mudugamuwa-hewage/gp-general-practitioner/1731269/1326611" target="_blank" rel="noopener">
+    📅 Book Your Menopause Consultation
+  </a>
+</div>
+
+<script>
+  /* ── FAQ accordion ── */
+  function toggleFaq(btn) {
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    // Close all
+    document.querySelectorAll('.faq-question').forEach(b => {
+      b.setAttribute('aria-expanded', 'false');
+      b.nextElementSibling.style.maxHeight = '0';
+    });
+    // Open clicked if it was closed
+    if (!expanded) {
+      btn.setAttribute('aria-expanded', 'true');
+      const answer = btn.nextElementSibling;
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+    }
+  }
+
+  /* ── Enquiry form toggle ── */
+  function toggleEnquiry() {
+    const panel = document.getElementById('enquiry-panel');
+    const btn   = document.getElementById('enquiry-toggle-btn');
+    const open  = panel.style.display === 'none';
+    panel.style.display = open ? 'block' : 'none';
+    btn.textContent = open ? '✖ Close' : '✉️ Email a Question First';
+    if (open) panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  /* ── AJAX form submission ── */
+  document.addEventListener('DOMContentLoaded', function () {
+    var form = document.getElementById('enquiry-form');
+    if (!form) return;
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var btn = document.getElementById('enq-submit');
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+
+      var data = new URLSearchParams();
+      new FormData(form).forEach(function (val, key) { data.append(key, val); });
+
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: data.toString()
+      })
+      .then(function (res) {
+        if (res.ok) {
+          form.style.display = 'none';
+          document.getElementById('enquiry-success').style.display = 'block';
+        } else {
+          throw new Error('Network response was not ok');
+        }
+      })
+      .catch(function () {
+        btn.textContent = 'Send My Question →';
+        btn.disabled = false;
+        alert('Sorry, something went wrong. Please email info@novabodymedical.com.au directly.');
+      });
+    });
+  });
+</script>
 </body>
 </html>
