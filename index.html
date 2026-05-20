@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menopause & Perimenopause Care | NovaBody Medical</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* ── Reset & Base ─────────────────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    color: #4A4A4A;
+    background: #F7F3EE;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+
+  /* ── Tokens ───────────────────────────────────────────────── */
+  :root {
+    --teal:     #1A6B72;
+    --teal-dk:  #145A60;
+    --teal-lt:  #E6F4F5;
+    --teal-mid: #D0ECED;
+    --rose:     #C0415A;
+    --rose-dk:  #A8364C;
+    --rose-lt:  #FFF0F4;
+    --gold:     #F5A623;
+    --cream:    #F7F3EE;
+    --white:    #FFFFFF;
+    --text:     #4A4A4A;
+    --muted:    #555560;
+    --border:   #E2E8EA;
+    --shadow:   0 2px 16px rgba(26,107,114,0.10);
+    --shadow-lg:0 8px 40px rgba(26,107,114,0.13);
+    --radius:   10px;
+    --radius-lg:16px;
+  }
+
+  /* ── Utility ──────────────────────────────────────────────── */
+  .container { max-width: 1020px; margin: 0 auto; padding: 0 20px; }
+  .container-sm { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+  .text-teal  { color: var(--teal); }
+  .text-rose  { color: var(--rose); }
+  .text-muted { color: var(--muted); }
+  .fw-600 { font-weight: 600; }
+  .fw-700 { font-weight: 700; }
+
+  /* ── Buttons ──────────────────────────────────────────────── */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    gap: 8px;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 15px; font-weight: 600; letter-spacing: .01em;
+    cursor: pointer; border: 2px solid transparent;
+    transition: all .2s ease;
+    text-align: center; white-space: nowrap;
+  }
+  .btn-rose {
+    background: var(--rose); color: #fff; border-color: var(--rose);
+  }
+  .btn-rose:hover { background: var(--rose-dk); border-color: var(--rose-dk); transform: translateY(-1px); box-shadow: 0 4px 18px rgba(192,65,90,.30); }
+  .btn-teal {
+    background: var(--teal); color: #fff; border-color: var(--teal);
+  }
+  .btn-teal:hover { background: var(--teal-dk); transform: translateY(-1px); box-shadow: 0 4px 18px rgba(26,107,114,.28); }
+  .btn-outline {
+    background: transparent; color: var(--teal); border-color: var(--teal);
+  }
+  .btn-outline:hover { background: var(--teal-lt); }
+  .btn-lg { padding: 17px 36px; font-size: 16px; }
+  .btn-full { width: 100%; }
+
+  /* ── Header (logo only) ────────────────────────────────────── */
+  .site-header {
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    padding: 14px 0;
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 1px 8px rgba(0,0,0,.06);
+  }
+  .site-header .container {
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo-wrap { display: flex; align-items: center; gap: 10px; }
+  .logo-mark {
+    width: 38px; height: 38px; border-radius: 8px;
+    background: var(--teal);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .logo-mark svg { width: 22px; height: 22px; fill: #fff; }
+  .logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+  }
+  .logo-text { font-size: 17px; font-weight: 700; color: var(--teal); }
+  .logo-text span { display: block; font-size: 11px; font-weight: 400; color: var(--muted); letter-spacing: .04em; }
+  .header-cta .btn { padding: 10px 20px; font-size: 14px; }
+
+  /* ── Hero ─────────────────────────────────────────────────── */
+  .hero {
+    background: linear-gradient(135deg, var(--teal) 0%, #145a60 100%);
+    color: #fff;
+    padding: 72px 0 60px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .hero-inner {
+    position: relative; z-index: 1;
+    max-width: 720px; margin: 0 auto; padding: 0 20px;
+    text-align: center;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,.15);
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 13px; font-weight: 500;
+    margin-bottom: 24px;
+    backdrop-filter: blur(4px);
+  }
+  .hero-badge::before { content: '🩺'; }
+  .hero h1 {
+    font-size: clamp(28px, 5vw, 46px);
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-weight: 400; line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: -.01em;
+  }
+  .hero h1 em { color: #F5A623; font-style: italic; }
+  .hero-sub {
+    font-size: clamp(15px, 2.5vw, 18px);
+    line-height: 1.6;
+    opacity: .90;
+    margin-bottom: 36px;
+    max-width: 600px; margin-left: auto; margin-right: auto;
+  }
+  .hero-ctas {
+    display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;
+    margin-bottom: 36px;
+  }
+  .hero-trust {
+    display: flex; flex-wrap: wrap; gap: 16px; justify-content: center;
+    font-size: 13px; opacity: .80;
+  }
+  .hero-trust span { display: flex; align-items: center; gap: 5px; }
+  .hero-trust span::before { content: '✓'; font-weight: 700; color: #F5A623; }
+
+  /* ── Trust Strip ──────────────────────────────────────────── */
+  .trust-strip {
+    background: var(--teal-lt);
+    border-top: 1px solid var(--teal-mid);
+    border-bottom: 1px solid var(--teal-mid);
+    padding: 18px 0;
+  }
+  .trust-strip-inner {
+    display: flex; flex-wrap: wrap; gap: 12px 24px;
+    justify-content: center; align-items: center;
+  }
+  .trust-item {
+    display: flex; align-items: center; gap: 7px;
+    font-size: 13px; font-weight: 500; color: var(--teal-dk);
+  }
+  .trust-item .icon {
+    width: 22px; height: 22px; border-radius: 50%;
+    background: var(--teal); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; flex-shrink: 0;
+  }
+
+  /* ── Sections ─────────────────────────────────────────────── */
+  .section { padding: 64px 0; }
+  .section-sm { padding: 44px 0; }
+  .section-alt { background: var(--teal-lt); }
+  .section-rose { background: var(--rose-lt); }
+  .section-dark { background: var(--teal); color: #fff; }
+  .section-white { background: #fff; }
+
+  .section-label {
+    font-size: 12px; font-weight: 600; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--rose);
+    margin-bottom: 10px;
+  }
+  .section-title {
+    font-size: clamp(22px, 4vw, 34px);
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-weight: 400; line-height: 1.2;
+    letter-spacing: -.01em;
+    margin-bottom: 14px;
+  }
+  .section-intro {
+    font-size: 16px; color: var(--muted);
+    max-width: 580px; margin: 0 auto 40px;
+    text-align: center; line-height: 1.65;
+  }
+  .text-center { text-align: center; }
+
+  /* ── Symptom Grid ─────────────────────────────────────────── */
+  .symptom-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 14px;
+    margin: 32px 0;
+  }
+  .symptom-card {
+    background: #fff;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px 16px;
+    display: flex; align-items: flex-start; gap: 12px;
+    transition: border-color .2s, box-shadow .2s;
+  }
+  .symptom-card:hover {
+    border-color: var(--teal);
+    box-shadow: var(--shadow);
+  }
+  .symptom-icon {
+    font-size: 22px; flex-shrink: 0; line-height: 1;
+    margin-top: 1px;
+  }
+  .symptom-card h4 { font-size: 14px; font-weight: 600; margin-bottom: 3px; }
+  .symptom-card p  { font-size: 13px; color: var(--muted); line-height: 1.45; }
+
+  /* ── Quote / Validation Block ─────────────────────────────── */
+  .quote-block {
+    background: var(--teal);
+    color: #fff;
+    border-radius: var(--radius-lg);
+    padding: 36px 40px;
+    margin: 40px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .quote-block::before {
+    content: '"';
+    position: absolute; top: -10px; left: 20px;
+    font-size: 120px; font-weight: 800;
+    opacity: .12; line-height: 1;
+    font-family: Georgia, serif;
+  }
+  .quote-block p {
+    font-size: 18px; font-style: italic; line-height: 1.6;
+    position: relative; z-index: 1;
+    margin-bottom: 14px;
+  }
+  .quote-block cite {
+    font-size: 13px; font-style: normal;
+    opacity: .80;
+  }
+
+  /* ── What We Offer ────────────────────────────────────────── */
+  .offer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  .offer-card {
+    background: #fff;
+    border-radius: var(--radius-lg);
+    padding: 28px 24px;
+    box-shadow: var(--shadow);
+    border-top: 3px solid var(--teal);
+    transition: transform .2s, box-shadow .2s;
+  }
+  .offer-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+  .offer-card .offer-icon {
+    font-size: 28px; margin-bottom: 14px;
+  }
+  .offer-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+  .offer-card p  { font-size: 14px; color: var(--muted); line-height: 1.55; }
+
+  /* ── Process Steps ────────────────────────────────────────── */
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    counter-reset: step;
+  }
+  .step {
+    background: #fff;
+    border-radius: var(--radius-lg);
+    padding: 28px 22px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    position: relative;
+  }
+  .step-num {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: var(--teal);
+    color: #fff;
+    font-size: 18px; font-weight: 800;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 16px;
+  }
+  .step h3 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+  .step p  { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+  /* ── Dr Hewage ────────────────────────────────────────────── */
+  .doctor-section {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+  .doctor-photo-wrap {
+    position: relative;
+  }
+  .doctor-photo-wrap::before {
+    content: '';
+    position: absolute;
+    top: 12px; left: 12px; right: -12px; bottom: -12px;
+    background: var(--teal-lt);
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--teal-mid);
+    z-index: 0;
+  }
+  .doctor-photo {
+    position: relative; z-index: 1;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 12px 48px rgba(26,107,114,0.22);
+    background: var(--teal-lt);
+    aspect-ratio: 1/1;
+    border: 3px solid var(--teal);
+  }
+  .doctor-photo img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+  .doctor-photo img[data-broken] {
+    display: none;
+  }
+  .doctor-photo-fallback {
+    display: none;
+    width: 100%; height: 100%;
+    background: linear-gradient(145deg, var(--teal) 0%, var(--teal-dk) 100%);
+    align-items: center; justify-content: center;
+    flex-direction: column; text-align: center; padding: 24px;
+    color: #fff;
+  }
+  .doctor-photo img[data-broken] ~ .doctor-photo-fallback {
+    display: flex;
+  }
+  .fallback-initials {
+    width: 80px; height: 80px; border-radius: 50%;
+    background: rgba(255,255,255,.2);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: 28px; color: #fff;
+    margin-bottom: 16px;
+  }
+  .fallback-name { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+  .fallback-creds { font-size: 12px; opacity: .8; }
+  .doctor-name-tag {
+    position: absolute; bottom: -14px; left: 50%; transform: translateX(-50%);
+    background: var(--teal); color: #fff;
+    padding: 6px 18px; border-radius: 20px;
+    font-size: 12px; font-weight: 700;
+    white-space: nowrap; z-index: 2;
+    box-shadow: 0 4px 12px rgba(26,107,114,0.30);
+  }
+  @media (max-width: 680px) {
+    .doctor-section { grid-template-columns: 1fr; gap: 40px; }
+    .doctor-photo-wrap { max-width: 260px; margin: 0 auto; }
+  }
+  .doctor-info .creds {
+    display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 22px;
+  }
+  .cred-badge {
+    background: var(--teal-lt);
+    border: 1px solid var(--teal-mid);
+    color: var(--teal-dk);
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 12px; font-weight: 600;
+  }
+  .doctor-info p { font-size: 15px; color: var(--muted); line-height: 1.7; margin-bottom: 14px; }
+  .check-list { list-style: none; margin: 16px 0; }
+  .check-list li {
+    display: flex; align-items: flex-start; gap: 10px;
+    font-size: 14px; margin-bottom: 9px; color: var(--text);
+  }
+  .check-list li::before {
+    content: '✓';
+    color: var(--teal);
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  /* ── Differentiators ──────────────────────────────────────── */
+  .diff-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  .diff-card {
+    padding: 28px 24px;
+    background: #fff;
+  }
+  .diff-card.highlight { background: var(--teal); color: #fff; }
+  .diff-card h4 {
+    font-size: 14px; font-weight: 700;
+    margin-bottom: 8px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .diff-card.highlight h4 { color: #fff; }
+  .diff-card p { font-size: 13px; line-height: 1.55; color: var(--muted); }
+  .diff-card.highlight p { color: rgba(255,255,255,.85); }
+
+  /* ── Testimonials ─────────────────────────────────────────── */
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  .testimonial-card {
+    background: #fff;
+    border-radius: var(--radius-lg);
+    padding: 28px 24px;
+    box-shadow: var(--shadow);
+    position: relative;
+    border-left: 4px solid var(--teal);
+  }
+  .stars { color: #F59E0B; font-size: 15px; margin-bottom: 12px; letter-spacing: 2px; }
+  .testimonial-card blockquote {
+    font-size: 14px; line-height: 1.65; color: var(--text);
+    margin-bottom: 16px; font-style: italic;
+  }
+  .testimonial-card blockquote::before { content: '"'; }
+  .testimonial-card blockquote::after  { content: '"'; }
+  .testimonial-meta { font-size: 12px; font-weight: 600; color: var(--teal); }
+  .testimonial-meta span { display: block; font-weight: 400; color: var(--muted); }
+
+  /* ── Fees ─────────────────────────────────────────────────── */
+  .fees-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-bottom: 28px;
+  }
+  .fee-card {
+    background: #fff;
+    border-radius: var(--radius-lg);
+    padding: 32px 28px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    border-top: 4px solid var(--teal);
+  }
+  .fee-card.featured { border-top-color: var(--rose); }
+  .fee-label { font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+  .fee-price { font-size: 44px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; color: var(--teal); line-height: 1; margin-bottom: 4px; }
+  .fee-card.featured .fee-price { color: var(--rose); }
+  .fee-duration { font-size: 13px; color: var(--muted); margin-bottom: 20px; }
+  .fee-includes { text-align: left; }
+  .fee-includes li {
+    display: flex; align-items: flex-start; gap: 8px;
+    font-size: 13px; margin-bottom: 8px; color: var(--text);
+  }
+  .fee-includes li::before { content: '✓'; color: var(--teal); font-weight: 700; flex-shrink: 0; }
+  .fee-note {
+    background: var(--teal-lt);
+    border: 1px solid var(--teal-mid);
+    border-radius: var(--radius);
+    padding: 14px 18px;
+    font-size: 13px; color: var(--teal-dk); line-height: 1.55;
+    text-align: center;
+  }
+
+  /* ── FAQ ──────────────────────────────────────────────────── */
+  .faq-list { max-width: 680px; margin: 0 auto; }
+  .faq-item {
+    background: #fff;
+    border-radius: var(--radius);
+    margin-bottom: 10px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  .faq-question {
+    width: 100%; text-align: left;
+    padding: 18px 20px;
+    background: none; border: none; cursor: pointer;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 12px;
+    font-size: 15px; font-weight: 600; color: var(--text);
+    font-family: inherit;
+    transition: color .2s;
+  }
+  .faq-question:hover { color: var(--teal); }
+  .faq-question .chevron {
+    flex-shrink: 0; transition: transform .25s;
+    color: var(--teal); font-size: 18px; line-height: 1;
+  }
+  .faq-question[aria-expanded="true"] .chevron { transform: rotate(180deg); }
+  .faq-answer {
+    max-height: 0; overflow: hidden;
+    transition: max-height .3s ease;
+  }
+  .faq-answer-inner {
+    padding: 0 20px 18px;
+    font-size: 14px; color: var(--muted); line-height: 1.65;
+  }
+
+  /* ── Final CTA ────────────────────────────────────────────── */
+  .cta-section {
+    background: linear-gradient(135deg, var(--teal) 0%, #0F4E54 100%);
+    color: #fff; text-align: center;
+    padding: 72px 0;
+    position: relative; overflow: hidden;
+  }
+  .cta-section::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 70% 50%, rgba(255,216,138,.08) 0%, transparent 70%);
+  }
+  .cta-section .container { position: relative; z-index: 1; }
+  .cta-section h2 { font-size: clamp(24px, 4vw, 38px); font-weight: 800; margin-bottom: 14px; letter-spacing: -.02em; }
+  .cta-section p  { font-size: 16px; opacity: .88; margin-bottom: 36px; max-width: 520px; margin-left: auto; margin-right: auto; line-height: 1.6; }
+  .cta-btns { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+  .btn-white { background: #fff; color: var(--teal); font-weight: 700; }
+  .btn-white:hover { background: #f0f0ee; transform: translateY(-1px); box-shadow: 0 4px 20px rgba(0,0,0,.15); }
+  .btn-ghost { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,.5); }
+  .btn-ghost:hover { border-color: #fff; background: rgba(255,255,255,.08); }
+
+  /* ── Callout Banner ───────────────────────────────────────── */
+  .callout-banner {
+    background: var(--rose-lt);
+    border: 1.5px solid rgba(192,65,90,.2);
+    border-radius: var(--radius-lg);
+    padding: 24px 28px;
+    display: flex; align-items: center; gap: 16px;
+    flex-wrap: wrap;
+  }
+  .callout-banner .icon { font-size: 28px; flex-shrink: 0; }
+  .callout-banner-text h4 { font-weight: 700; margin-bottom: 4px; color: var(--rose); }
+  .callout-banner-text p  { font-size: 14px; color: var(--muted); }
+
+  /* ── Footer ───────────────────────────────────────────────── */
+  .site-footer {
+    background: #1A2526;
+    color: rgba(255,255,255,.7);
+    text-align: center;
+    padding: 28px 20px;
+    font-size: 12px; line-height: 1.8;
+  }
+  .site-footer a { color: rgba(255,255,255,.55); }
+  .site-footer strong { color: rgba(255,255,255,.9); }
+
+  /* ── Mobile sticky CTA ────────────────────────────────────── */
+  .sticky-cta {
+    display: none;
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
+    background: var(--rose);
+    padding: 14px 20px;
+    box-shadow: 0 -4px 20px rgba(0,0,0,.18);
+  }
+  .sticky-cta a {
+    display: block; width: 100%; text-align: center;
+    color: #fff; font-size: 15px; font-weight: 700;
+    letter-spacing: .01em;
+  }
+
+  /* ── Responsive ───────────────────────────────────────────── */
+  @media (max-width: 768px) {
+    .doctor-section { grid-template-columns: 1fr; }
+    .doctor-photo { max-width: 220px; margin: 0 auto; aspect-ratio: 1/1; }
+    .diff-grid { grid-template-columns: 1fr; }
+    .hero { padding: 52px 0 44px; }
+    .section { padding: 48px 0; }
+    .sticky-cta { display: block; }
+    body { padding-bottom: 60px; }
+    .quote-block { padding: 24px 22px; }
+    .quote-block p { font-size: 16px; }
+  }
+  @media (max-width: 480px) {
+    .hero-ctas { flex-direction: column; align-items: center; }
+    .hero-ctas .btn { width: 100%; max-width: 320px; }
+    .cta-btns { flex-direction: column; align-items: center; }
+    .cta-btns .btn { width: 100%; max-width: 320px; }
+    .fees-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── Header ──────────────────────────────────────────────── -->
+<header class="site-header">
+  <div class="container">
+    <div class="logo-wrap">
+      <div class="logo-mark">
+        <img src="novabody_menopause_logo.png" alt="NovaBody Medical Logo" class="logo-image">
+      </div>
+      <div class="logo-text">
+        NovaBody Medical
+        <span>Dr Premila Hewage · MBBS FRACGP</span>
+      </div>
+    </div>
+    <div class="header-cta">
+      <a href="https://www.halaxy.com/book/appointment/dr-premila-mudugamuwa-hewage/gp-general-practitioner/1731269/1326611" class="btn btn-rose" target="_blank" rel="noopener">Book Now</a>
+    </div>
+  </div>
+</header>
+
+<!-- ── Hero ────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">Doctor-Led Menopause & Perimenopause Care</div>
+    <h1><em>Your Symptoms Are Real.</em><br>And There Is Effective Help.</h1>
+    <p class="hero-sub">Personalised perimenopause and menopause care from Dr Premila Hewage, FRACGP — with a proper clinical assessment, evidence-based treatment options, and genuine follow-up support. Not a quick script. Real medical care.</p>
+    <div class="hero-ctas">
+      <a href="https://www.halaxy.com/book/appointment/dr-premila-mudugamuwa-hewage/gp-general-practitioner/1731269/1326611" class="btn btn-white btn-lg" target="_blank" rel="noopener">
+        📅 Book Your Consultation
+      </a>
+      <a href="#what-we-offer" class="btn btn-ghost btn-lg">Learn More</a>
+    </div>
+    <div class="hero-trust">
+      <span>AHPRA Registered GP</span>
+      <span>FRACGP Qualified</span>
+      <span>15+ Years Experience</span>
+      <span>Telehealth Australia-Wide</span>
+      <span>In-Person · Balwyn Melbourne</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── Trust Strip ──────────────────────────────────────────── -->
+<div class="trust-strip">
+  <div class="container">
+    <div class="trust-strip-inner">
+      <div class="trust-item"><div class="icon">✓</div> AHPRA Registered</div>
+      <div class="trust-item"><div class="icon">✓</div> FRACGP — Fellow, Royal Australian College of GPs</div>
+      <div class="trust-item"><div class="icon">✓</div> 15+ Years Clinical Experience</div>
+      <div class="trust-item"><div class="icon">✓</div> Medicare Provider</div>
+      <div class="trust-item"><div class="icon">✓</div> Telehealth · Australia-Wide</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Symptom Validation ───────────────────────────────────── -->
+<section class="section section-white">
+  <div class="container">
+    <div class="text-center">
+      <p class="section-label">You Are Not Alone</p>
+      <h2 class="section-title">Does Any of This Sound Familiar?</h2>
+      <p class="section-intro">These are not signs that you are "just stressed" or "getting older." They are recognised symptoms of perimenopause and menopause — and they are treatable.</p>
+    </div>
+    <div class="symptom-grid">
+      <div class="symptom-card">
+        <div class="symptom-icon">🌡️</div>
+        <div><h4>Hot Flushes & Night Sweats</h4><p>Sudden waves of heat, drenching sweats, disrupted sleep</p></div>
+      </div>
+      <div class="symptom-card">
+        <div class="symptom-icon">🧠</div>
+        <div><h4>Brain Fog</h4><p>Difficulty concentrating, forgetting words, feeling "not yourself"</p></div>
+      </div>
+      <div class="symptom-card">
+        <div class="symptom-icon">💭</div>
+        <div><h4>Mood Changes</h4><p>Anxiety, irritability, low mood — often with no clear reason</p></div>
+      </div>
+      <div class="symptom-card">
+        <div class="symptom-icon">🌙</div>
+        <div><h4>Sleep Problems</h4><p>Waking at 2–4am, difficulty falling asleep, never feeling rested</p></div>
+      </div>
+      <div class="symptom-card">
+        <div class="symptom-icon">⚖️</div>
+        <div><h4>Weight Changes</h4><p>Weight creeping up, especially around the middle — despite no diet change</p></div>
+      </div>
+      <div class="symptom-card">
+        <div class="symptom-icon">💪</div>
+        <div><h4>Fatigue & Joint Pain</h4><p>Persistent exhaustion, aching joints, low motivation and energy</p></div>
+      </div>
+      <div class="symptom-card">
+        <div class="symptom-icon">📅</div>
+        <div><h4>Irregular Periods</h4><p>Cycles becoming unpredictable, heavier, lighter, or skipping</p></div>
+      </div>
+      <div class="symptom-card">
+        <div class="symptom-icon">❤️</div>
+        <div><h4>Low Libido</h4><p>Reduced interest in intimacy, vaginal dryness, discomfort</p></div>
+      </div>
+      <div class="symptom-card">
+        <div class="symptom-icon">💓</div>
+        <div><h4>Racing Heart & Headaches</h4><p>Palpitations, new or worsening headaches, sensory sensitivity</p></div>
+      </div>
+    </div>
+
+    <div class="quote-block">
+      <p>If your doctor has told you it's "just stress" or "part of getting older" — you deserve a second opinion. These are medically recognised symptoms. They can be investigated, assessed, and treated.</p>
+      <cite>— Dr Premila Hewage, MBBS FRACGP · Founder, NovaBody Medical</cite>
+    </div>
+  </div>
+</section>
+
+<!-- ── What We Offer ────────────────────────────────────────── -->
+<section class="section section-alt" id="what-we-offer">
+  <div class="container">
+    <div class="text-center">
+      <p class="section-label">Our Services</p>
+      <h2 class="section-title">What Dr Hewage Offers You</h2>
+      <p class="section-intro">This is not a generic telehealth appointment. Every consultation is focused specifically on your symptoms, your history, and your goals.</p>
+    </div>
+    <div class="offer-grid">
+      <div class="offer-card">
+        <div class="offer-icon">💊</div>
+        <h3>HRT / MHT Assessment & Prescribing</h3>
+        <p>Evidence-based menopausal hormone therapy — assessed for your individual health profile, risk factors, and preferences. Current formulations, properly monitored.</p>
+      </div>
+      <div class="offer-card">
+        <div class="offer-icon">🩺</div>
+        <h3>Perimenopause Assessment</h3>
+        <p>Perimenopause can start years before your last period. Dr Hewage identifies where you are in the transition and builds a plan for each stage.</p>
+      </div>
+      <div class="offer-card">
+        <div class="offer-icon">🌿</div>
+        <h3>Non-Hormonal Options</h3>
+        <p>Not every woman wants or can use HRT. Dr Hewage discusses all evidence-based non-hormonal alternatives — no pressure in any direction.</p>
+      </div>
+      <div class="offer-card">
+        <div class="offer-icon">🦴</div>
+        <h3>Bone & Heart Health</h3>
+        <p>Oestrogen decline affects bone density and cardiovascular risk. Long-term health planning is part of every menopause consultation.</p>
+      </div>
+      <div class="offer-card">
+        <div class="offer-icon">🔄</div>
+        <h3>Follow-Up & Monitoring</h3>
+        <p>Your care does not stop at the prescription. Follow-up appointments are built into your plan to assess your response and adjust treatment as needed.</p>
+      </div>
+      <div class="offer-card">
+        <div class="offer-icon">🏥</div>
+        <h3>Contraceptive Counselling</h3>
+        <p>You can still be fertile in perimenopause. Dr Hewage provides contraceptive guidance appropriate for the transition period.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── This Is Not a Script Service ────────────────────────── -->
+<section class="section section-white">
+  <div class="container-sm">
+    <div class="text-center">
+      <p class="section-label">What Makes This Different</p>
+      <h2 class="section-title">Your Care Does Not Stop at the Prescription</h2>
+    </div>
+    <div class="diff-grid" style="margin-top:32px;">
+      <div class="diff-card">
+        <h4>❌ What many online services offer</h4>
+        <p>A brief questionnaire, a quick telehealth call, a script sent to your pharmacy. Minimal assessment. No follow-up scheduled. You manage alone from there.</p>
+      </div>
+      <div class="diff-card highlight">
+        <h4>✅ What you get at NovaBody Medical</h4>
+        <p>A 30-minute consultation with a GP who has read your history before you connect. A personalised treatment plan. A follow-up appointment built in. Monitoring and adjustment as needed. You are never left to manage alone.</p>
+      </div>
+      <div class="diff-card">
+        <h4>❌ One-size-fits-all approach</h4>
+        <p>Standard protocol applied to every patient. No discussion of your individual risk profile. HRT either automatically prescribed or automatically refused.</p>
+      </div>
+      <div class="diff-card highlight">
+        <h4>✅ Genuinely personalised care</h4>
+        <p>Your age, your health history, your family history, your preferences, your lifestyle — all considered before any recommendation is made. Your plan is yours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Process Steps ────────────────────────────────────────── -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center">
+      <p class="section-label">How It Works</p>
+      <h2 class="section-title">From First Booking to Ongoing Support</h2>
+      <p class="section-intro">A clear, supported process — not a confusing maze of forms and waiting.</p>
+    </div>
+    <div class="steps" style="margin-top:36px;">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Book Online</h3>
+        <p>Choose a time that suits you. Complete a brief pre-consult health form so Dr Hewage can review your history before the appointment starts.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Your Consultation</h3>
+        <p>A 30-minute telehealth appointment (or in-person at Balwyn). Dr Hewage discusses your symptoms, history, and concerns in detail. No rushing.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Your Personalised Plan</h3>
+        <p>You receive a clear treatment plan — which may include HRT, non-hormonal options, lifestyle strategies, or a combination. Blood tests ordered if needed.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h3>Follow-Up & Adjustment</h3>
+        <p>A follow-up consultation is scheduled to assess how you are responding. Your plan is adjusted as needed. You are supported throughout.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── About Dr Hewage ──────────────────────────────────────── -->
+<section class="section section-white">
+  <div class="container">
+    <div class="doctor-section">
+      <div class="doctor-photo-wrap">
+        <div class="doctor-photo">
+          <img src="dr-premila.jpg" alt="Dr Premila Hewage — MBBS FRACGP, Founder of NovaBody Medical"
+               onerror="this.setAttribute('data-broken','1')">
+          <div class="doctor-photo-fallback">
+            <div class="fallback-initials">PH</div>
+            <div class="fallback-name">Dr Premila Hewage</div>
+            <div class="fallback-creds">MBBS · FRACGP<br>Founder, NovaBody Medical</div>
+          </div>
+        </div>
+        <div class="doctor-name-tag">Dr Premila Hewage · MBBS FRACGP</div>
+      </div>
+      <div class="doctor-info">
+        <p class="section-label">Your Doctor</p>
+        <h2 class="section-title" style="text-align:left;">Dr Premila Hewage</h2>
+        <div class="creds">
+          <span class="cred-badge">🎓 MBBS</span>
+          <span class="cred-badge">🩺 FRACGP</span>
+          <span class="cred-badge">✅ AHPRA Registered</span>
+          <span class="cred-badge">🏥 Medicare Provider</span>
+          <span class="cred-badge">⭐ 15+ Years Experience</span>
+        </div>
+        <p>I founded NovaBody Medical because I kept seeing the same pattern in general practice: women in their 40s and 50s arriving with real, significant symptoms — and leaving without answers, without a plan, and often without having felt truly heard.</p>
+        <p>I wanted to build a practice where there is time to listen. Where the assessment is thorough. Where the treatment plan is actually tailored to you. And where your care continues beyond the first appointment.</p>
+        <ul class="check-list">
+          <li>GP specialising in perimenopause and menopause management</li>
+          <li>HRT / MHT assessment, prescribing, and monitoring</li>
+          <li>Evidence-based practice using current guidelines</li>
+          <li>Telehealth Australia-wide + in-person consultations in Balwyn</li>
+          <li>Fellow, Royal Australian College of General Practitioners (FRACGP)</li>
+        </ul>
+        <a href="https://www.halaxy.com/book/appointment/dr-premila-mudugamuwa-hewage/gp-general-practitioner/1731269/1326611" class="btn btn-teal" target="_blank" rel="noopener" style="margin-top:8px;">Book With Dr Hewage</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Testimonials ─────────────────────────────────────────── -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center">
+      <p class="section-label">What Patients Say</p>
+      <h2 class="section-title">Real Experiences</h2>
+      <p class="section-intro">Names and identifying details shared with consent.</p>
+    </div>
+    <div class="testimonial-grid" style="margin-top:32px;">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>I had been dismissing my symptoms for two years — brain fog, terrible sleep, and anxiety that came from nowhere. Dr Hewage was the first person who actually listened and didn't tell me to 'just try to manage stress better.' I finally feel like myself again.</blockquote>
+        <div class="testimonial-meta">
+          Michelle S.
+          <span>Bayside, Melbourne · Perimenopause</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>I was nervous about HRT — I'd heard so much conflicting information. Dr Hewage explained the evidence clearly, without pressure in either direction. I felt completely informed before making any decision. The follow-up care has been excellent.</blockquote>
+        <div class="testimonial-meta">
+          Karen T.
+          <span>Geelong, VIC · Menopause & HRT</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>After three GPs who told me my bloods were 'normal' and I was 'probably just tired,' booking with Dr Hewage was such a relief. She took a thorough history, identified where I was in the perimenopause transition, and gave me a plan that actually made sense for my situation.</blockquote>
+        <div class="testimonial-meta">
+          Joanne H.
+          <span>Inner North Melbourne · Perimenopause</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Fees ─────────────────────────────────────────────────── -->
+<section class="section section-white">
+  <div class="container">
+    <div class="text-center">
+      <p class="section-label">Transparent Pricing</p>
+      <h2 class="section-title">Consultation Fees</h2>
+      <p class="section-intro">Private telehealth consultations. No hidden fees. No surprises.</p>
+    </div>
+    <div class="fees-grid" style="margin-top:32px; max-width:660px; margin-left:auto; margin-right:auto;">
+      <div class="fee-card featured">
+        <div class="fee-label">Initial Consultation</div>
+        <div class="fee-price">$250</div>
+        <div class="fee-duration">30 minutes · Telehealth</div>
+        <ul class="fee-includes">
+          <li>Full health history review</li>
+          <li>Detailed symptom assessment</li>
+          <li>Discussion of all treatment options</li>
+          <li>Personalised treatment plan</li>
+          <li>Blood test referral if appropriate</li>
+          <li>Follow-up appointment scheduled</li>
+        </ul>
+      </div>
+      <div class="fee-card">
+        <div class="fee-label">Review / Follow-Up</div>
+        <div class="fee-price">$125</div>
+        <div class="fee-duration">15 minutes · Telehealth</div>
+        <ul class="fee-includes">
+          <li>Treatment response assessment</li>
+          <li>Blood result review</li>
+          <li>Plan adjustment if needed</li>
+          <li>Prescription renewal</li>
+          <li>Ongoing monitoring</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fee-note" style="max-width:660px; margin:0 auto;">
+      📍 <strong>In-person option:</strong> Prefer to come in? Dr Hewage also consults face-to-face at <strong>Modern Medical Balwyn, Melbourne</strong>. Medicare rebates may apply to in-person appointments — please enquire when booking. <a href="https://qualitashealth.com.au/our-practices/modern-medical-balwyn/" target="_blank" rel="noopener" style="color:var(--teal); font-weight:600;">Book in-person at Modern Medical →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ──────────────────────────────────────────────────── -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center">
+      <p class="section-label">Common Questions</p>
+      <h2 class="section-title">💬 Questions Before You Book</h2>
+    </div>
+    <div class="faq-list" style="margin-top:32px;">
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+          Is HRT safe? I've heard conflicting things.
+          <span class="chevron">▾</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            For most women, the benefits of HRT outweigh the risks — particularly when started within 10 years of menopause onset or before age 60. The evidence has changed significantly since the early 2000s. Dr Hewage will assess your individual risk profile, explain the current evidence clearly, and support whatever decision you make. There is no pressure in either direction.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+          I'm still having periods. Is it too early to see someone?
+          <span class="chevron">▾</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            No. Perimenopause often begins years before periods stop — sometimes in your early 40s. If you are experiencing symptoms (mood changes, sleep disruption, brain fog, irregular cycles), it is worth getting properly assessed now rather than waiting. Early support can make a significant difference.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+          Will I definitely be prescribed HRT?
+          <span class="chevron">▾</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            No. HRT is one of several options discussed — not an automatic outcome. Some women are not candidates for HRT due to medical history. Others prefer non-hormonal approaches. Dr Hewage will explain all available options and support whatever decision you make after a thorough assessment.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+          Do I need blood tests before my first appointment?
+          <span class="chevron">▾</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Not necessarily. You can book your consultation first. Dr Hewage will assess whether blood tests are clinically indicated during your consultation and refer you for them if needed. Having recent test results is helpful if you have them, but it is not a requirement for booking.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+          What if I prefer not to take hormones?
+          <span class="chevron">▾</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            That is completely fine. There are evidence-based non-hormonal options for managing menopause symptoms — both pharmacological and lifestyle-based. Dr Hewage will discuss all of them with you without pressure. Your preferences and values guide the plan.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+          How quickly can I book an appointment?
+          <span class="chevron">▾</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Telehealth appointments are typically available within a few days. Click the booking button on this page to see current availability. Consultations are available Monday–Friday, 8:30am–6:00pm.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── In-Person Callout ─────────────────────────────────────── -->
+<section class="section-sm section-white">
+  <div class="container-sm">
+    <div class="callout-banner">
+      <div class="icon">🏥</div>
+      <div class="callout-banner-text" style="flex:1;">
+        <h4>Prefer to Come In?</h4>
+        <p>In-person appointments are available at <strong>Modern Medical Balwyn, Melbourne</strong>. Medicare rebates may apply. Book directly through Modern Medical Balwyn.</p>
+      </div>
+      <a href="https://qualitashealth.com.au/our-practices/modern-medical-balwyn/" class="btn btn-rose" target="_blank" rel="noopener" style="flex-shrink:0;">Book In-Person</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Final CTA ────────────────────────────────────────────── -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to Feel Like Yourself Again?</h2>
+    <p>Most patients book within 48 hours. Telehealth appointments available weekdays,Weekends and Afterhours across Australia. In-person at Balwyn, Melbourne.</p>
+    <div class="cta-btns">
+      <a href="https://www.halaxy.com/book/appointment/dr-premila-mudugamuwa-hewage/gp-general-practitioner/1731269/1326611" class="btn btn-white btn-lg" target="_blank" rel="noopener">
+        📅 Book Your Consultation
+      </a>
+      <button class="btn btn-ghost btn-lg" onclick="toggleEnquiry()" id="enquiry-toggle-btn">
+        ✉️ Email a Question First
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ──────────────────────────────────────────────── -->
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2025 NovaBody Medical. All rights reserved.</p>
+    <p>Dr Premila Hewage · AHPRA Reg: MED0001619639 · FRACGP</p>
+    <p><strong>Disclaimer:</strong> This website is for informational purposes only and does not constitute medical advice. Please consult with Dr Hewage for personalised medical guidance.</p>
+    <p><a href="#privacy">Privacy Policy</a> · <a href="#terms">Terms of Service</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
