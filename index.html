@@ -1046,6 +1046,7 @@
       <form
         name="menopause-enquiry"
         method="POST"
+        action="/"
         data-netlify="true"
         id="enquiry-form"
         style="background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.3); border-radius:14px; padding:28px 24px;"
@@ -1148,11 +1149,13 @@
 
       var data = new URLSearchParams();
       new FormData(form).forEach(function (val, key) { data.append(key, val); });
+      var endpoint = form.action || window.location.pathname || '/';
 
-      fetch('/', {
+      fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: data.toString()
+        body: data.toString(),
+        credentials: 'same-origin'
       })
       .then(function (res) {
         if (res.ok) {
